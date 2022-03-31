@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 20px;
+  transition: width 0.5s;
+  box-shadow: 6px 6px #ccc;
+  padding: 0.1px;
+  margin: 0px; 
+}
+
+#div1 {transition-timing-function: linear;  background: #28C01A;}
+#div2 {transition-timing-function: ease; background: #0877F0;}
+#div3 {transition-timing-function: ease-in; background: #EA0CFF;}
+#div4 {transition-timing-function: ease-out; background: #E4FF0C; }
+#div5 {transition-timing-function: ease-in-out; background: #FF400C}
+
+div:hover + #Seccion1{
+  width: 600px;
+  height: 400px;
+  margin: .1px;
+  background-image: url("amg1.jpg");
+    }
+div:hover + #Seccion2{
+  width: 600px;
+  height: 400px;
+  margin: .1px;
+  background-image: url("amg2.jpg");
+   } 
+
+#contenedor {
+width: 800px;
+height: 190px;
+background-image: url("amg.gif");
+}
+
+#Seccion1 {
+width: 500px;
+height: 190px;
+margin: 10px;
+padding: 7px;
+float:center;
+}
+
+div:hover {
+width: 1000px;
+margin: .1px;
+   }
+  
+
+#Seccion2 {
+width: 500px;
+height: 190px;
+/*background: #ccc;*/
+margin: 10px;
+padding: 7px;
+float:center;
+}
+
+</style>
+</head>
+<body background="black">
+
+<h1>PETRONAS</h1>
+
+<div id="contenedor">
+
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
+
+
+</div>
+<div id="Seccion1"> </div>
+<div id="Seccion2"> </div>
+
+</body>
+</html>
